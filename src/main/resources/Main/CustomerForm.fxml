@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Customer">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="789.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="customerTableView" focusTraversable="false" layoutX="32.0" layoutY="75.0" onMouseClicked="#fillCustomerDataInfoToFields" prefHeight="204.0" prefWidth="837.0">
+                    <columns>
+                        <TableColumn fx:id="customerViewID" prefWidth="108.0" text="ID" />
+                        <TableColumn fx:id="customerViewName" prefWidth="172.0" text="Name" />
+                        <TableColumn fx:id="customerViewAddress" prefWidth="237.0" text="Address" />
+                        <TableColumn fx:id="customerViewFirstLevelDivision" prefWidth="75.0" text="Division ID" />
+                        <TableColumn fx:id="customerViewPostalCode" prefWidth="104.0" text="Postal Code" />
+                        <TableColumn fx:id="customerViewPhone" prefWidth="139.0" text="Phone" />
+                    </columns>
+                </TableView>
+                <Button fx:id="customerAddButton" focusTraversable="false" layoutX="719.0" layoutY="331.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" text="Add Customer" />
+                <Button fx:id="customerUpdateButton" disable="true" layoutX="723.0" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Update Customer" />
+                <Button fx:id="customerDeleteButton" disable="true" layoutX="723.0" layoutY="426.0" mnemonicParsing="false" onAction="#userDeleteCustomerInfo" prefHeight="25.0" prefWidth="140.0" text="Delete Customer" />
+                <TextField fx:id="customerNameTextField" focusTraversable="false" layoutX="144.0" layoutY="362.0" prefHeight="25.0" prefWidth="180.0" promptText="enter name" />
+                <TextField fx:id="customerAddressTextField" focusTraversable="false" layoutX="144.0" layoutY="394.0" prefHeight="25.0" prefWidth="180.0" promptText="enter address" />
+                <TextField fx:id="customerPostalCodeTextField" focusTraversable="false" layoutX="458.0" layoutY="362.0" prefHeight="25.0" prefWidth="170.0" promptText="enter postal code" />
+                <TextField fx:id="customerPhoneNumberTextField" focusTraversable="false" layoutX="458.0" layoutY="399.0" prefHeight="25.0" prefWidth="170.0" promptText="enter phone number" />
+                <Label layoutX="54.0" layoutY="398.0" text="Address:" />
+                <Label layoutX="341.0" layoutY="366.0" text="Postal Code:" />
+                <Label layoutX="341.0" layoutY="403.0" text="Phone Number:" />
+                <Label layoutX="58.0" layoutY="335.0" text="ID:" />
+                <TextField fx:id="customerIDTextField" disable="true" focusTraversable="false" layoutX="144.0" layoutY="331.0" prefHeight="25.0" prefWidth="180.0" promptText="auto-generated" />
+                <ComboBox fx:id="customerFirstLevelDivisionComboBox" focusTraversable="false" layoutX="458.0" layoutY="331.0" prefHeight="25.0" prefWidth="170.0" promptText="select first-level division" />
+                <ComboBox fx:id="customerCountryComboBox" focusTraversable="false" layoutX="145.0" layoutY="426.0" onAction="#filterFirstLevelDivisionComboBox" prefHeight="25.0" prefWidth="180.0" promptText="select country" />
+                <Label layoutX="341.0" layoutY="335.0" text="First-Level Division:" />
+                <Label layoutX="51.0" layoutY="430.0" text="Country:" />
+                <RadioButton layoutX="32.0" layoutY="21.0" mnemonicParsing="false" selected="true" text="Customer Form" underline="true">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="formControlToggleGroup" />
+                    </toggleGroup></RadioButton>
+                <RadioButton focusTraversable="false" layoutX="152.0" layoutY="21.0" mnemonicParsing="false" onAction="#ButtonAppointmentSceneChange" text="Appointment Form" toggleGroup="$formControlToggleGroup" underline="true" />
+                <Label layoutX="728.0" layoutY="300.0" prefHeight="21.0" prefWidth="140.0" text="Customer Options" underline="true">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="54.0" layoutY="366.0" text="Name: " />
+                <Button fx:id="customerResetButton" disable="true" layoutX="723.0" layoutY="466.0" mnemonicParsing="false" onAction="#resetTextFields" prefHeight="25.0" prefWidth="140.0" text="Reset Customer Data Boxes" wrapText="true" />
+                <Label layoutX="58.0" layoutY="290.0" text="Customer Data" underline="true">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="672.0" layoutY="294.0" orientation="VERTICAL" prefHeight="200.0" />
+                <RadioButton layoutX="286.0" layoutY="21.0" mnemonicParsing="false" onAction="#ButtonReportSceneChange" text="Report Form" toggleGroup="$formControlToggleGroup" underline="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogIn">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="userIDField" focusTraversable="false" layoutX="359.0" layoutY="208.0" prefHeight="35.0" prefWidth="183.0" promptText="user ID" />
+                <TextField fx:id="passwordField" focusTraversable="false" layoutX="359.0" layoutY="265.0" prefHeight="35.0" prefWidth="183.0" promptText="password" />
+                <Label fx:id="logInLabel" layoutX="211.0" layoutY="109.0" prefHeight="85.0" prefWidth="523.0" text="Wgu Software 2|Login Screen|By: Billy Payne" underline="true">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="enterButton" focusTraversable="false" layoutX="359.0" layoutY="328.0" mnemonicParsing="false" onAction="#userLogInAccess" prefHeight="50.0" prefWidth="183.0" text="Submit" />
+                <Label fx:id="userLocationLabel" layoutX="14.0" layoutY="14.0" text="user location" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

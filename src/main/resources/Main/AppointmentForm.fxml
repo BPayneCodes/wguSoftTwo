@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Appointment">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <RadioButton layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#buttonToCustomerSceneChange" text="Customer Form" underline="true">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="formControlToggleGroup" />
+                    </toggleGroup></RadioButton>
+                <RadioButton layoutX="126.0" layoutY="22.0" mnemonicParsing="false" selected="true" text="Appointment Form" toggleGroup="$formControlToggleGroup" underline="true" />
+                <Button fx:id="addAppointmentButton" focusTraversable="false" layoutX="735.0" layoutY="348.0" mnemonicParsing="false" onAction="#addUserAppointments" prefHeight="25.0" prefWidth="149.0" text="Add Appointment" />
+                <Button fx:id="updateAppointmentButton" disable="true" focusTraversable="false" layoutX="735.0" layoutY="382.0" mnemonicParsing="false" onAction="#autoUpdateAppointmentInfo" prefHeight="25.0" prefWidth="149.0" text="Update Appointment" />
+                <Button fx:id="deleteAppointmentButton" disable="true" focusTraversable="false" layoutX="735.0" layoutY="412.0" mnemonicParsing="false" onAction="#userDeleteAppointmentInfo" prefHeight="25.0" prefWidth="149.0" text="Delete Appointment" />
+                <Label layoutX="735.0" layoutY="317.0" prefHeight="21.0" prefWidth="149.0" text="Appointment Options" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="appointmentTitleTextField" focusTraversable="false" layoutX="126.0" layoutY="395.0" prefHeight="25.0" prefWidth="200.0" promptText="enter title" />
+                <TextField fx:id="appointmentDescriptionTextField" focusTraversable="false" layoutX="126.0" layoutY="429.0" prefHeight="25.0" prefWidth="200.0" promptText="enter description" />
+                <TextField fx:id="appointmentLocationTextField" focusTraversable="false" layoutX="126.0" layoutY="462.0" prefHeight="25.0" prefWidth="200.0" promptText="enter location" />
+                <TextField fx:id="appointmentIDTextField" disable="true" focusTraversable="false" layoutX="126.0" layoutY="360.0" prefHeight="25.0" prefWidth="200.0" promptText="auto-generated" />
+                <TextField fx:id="appointmentTypeTextField" focusTraversable="false" layoutX="487.0" layoutY="361.0" prefHeight="25.0" prefWidth="200.0" promptText="enter type" />
+                <TextField fx:id="appointmentCustomerIDTextField" focusTraversable="false" layoutX="487.0" layoutY="463.0" prefHeight="25.0" prefWidth="200.0" promptText="enter customer ID" />
+                <TextField fx:id="appointmentUserIDTextField" focusTraversable="false" layoutX="488.0" layoutY="496.0" prefHeight="25.0" prefWidth="200.0" promptText="enter user ID" />
+                <Label layoutX="32.0" layoutY="364.0" text="Appointment_ID:" />
+                <Label layoutX="33.0" layoutY="398.0" text="Title:" />
+                <Label layoutX="31.0" layoutY="433.0" text="Description:" />
+                <Label layoutX="31.0" layoutY="466.0" text="Location:" />
+                <Label layoutX="33.0" layoutY="499.0" text="Contact:" />
+                <Label layoutX="379.0" layoutY="364.0" prefHeight="17.0" prefWidth="43.0" text="Type:" />
+                <Label layoutX="374.0" layoutY="398.0" text="Start Date and Time:" />
+                <Label layoutX="376.0" layoutY="434.0" text="End Date and Time:" />
+                <Label layoutX="376.0" layoutY="467.0" text="Customer_ID:" />
+                <Label layoutX="374.0" layoutY="499.0" text="User_ID:" />
+                <ComboBox fx:id="appointmentContactComboBox" focusTraversable="false" layoutX="126.0" layoutY="495.0" prefHeight="25.0" prefWidth="200.0" promptText="select contact" />
+                <TabPane layoutX="10.0" layoutY="75.0" prefHeight="225.0" prefWidth="880.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab fx:id="appTableViewWeekTabButton" text="Weekly Appointments">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="appWeekTableView" layoutX="4.0" layoutY="24.0" onMouseClicked="#ViewAppointmentDataToBoxes" prefHeight="189.0" prefWidth="873.0">
+                                            <columns>
+                                                <TableColumn fx:id="WeekViewAppointmentID" prefWidth="98.0" text="Appointment_ID" />
+                                                <TableColumn fx:id="WeekViewTitle" prefWidth="68.0" text="Title" />
+                                                <TableColumn fx:id="WeekViewDescription" prefWidth="113.0" text="Description" />
+                                                <TableColumn fx:id="WeekViewLocation" prefWidth="115.0" text="Location" />
+                                                <TableColumn fx:id="WeekViewContact" prefWidth="64.0" text="Contact" />
+                                                <TableColumn fx:id="WeekViewType" prefWidth="86.0" text="Type" />
+                                                <TableColumn fx:id="WeekViewStartDateTime" prefWidth="135.0" text="Start Date and Time" />
+                                                <TableColumn fx:id="WeekTableViewEndDateTime" prefWidth="111.0" text="End Date and Time" />
+                                                <TableColumn fx:id="WeekViewCustomerID" prefWidth="77.0" text="Customer_ID" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab fx:id="appTableViewMonthTabButton" text="Monthly Appointments">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="appMonthTableView" focusTraversable="false" layoutX="4.0" layoutY="14.0" onMouseClicked="#ViewAppointmentDataToBoxes" prefHeight="181.0" prefWidth="873.0">
+                                            <columns>
+                                                <TableColumn fx:id="MonthViewAppointmentID" prefWidth="98.0" text="Appointment_ID" />
+                                                <TableColumn fx:id="MonthViewTitle" prefWidth="68.0" text="Title" />
+                                                <TableColumn fx:id="MonthViewDescription" prefWidth="113.0" text="Description" />
+                                                <TableColumn fx:id="MonthViewLocation" prefWidth="126.0" text="Location" />
+                                                <TableColumn fx:id="MonthViewContact" prefWidth="53.0" text="Contact" />
+                                                <TableColumn fx:id="MonthViewType" prefWidth="103.0" text="Type" />
+                                                <TableColumn fx:id="MonthViewStartDateTime" prefWidth="117.0" text="Start Date and Time" />
+                                                <TableColumn fx:id="MonthViewEndDateTime" prefWidth="112.0" text="End Date and Time" />
+                                                <TableColumn fx:id="MonthViewCustomerID" prefWidth="77.0" text="Customer_ID" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab fx:id="ViewAllTabButton" text="All Appointments">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="AllTableView" layoutX="4.0" layoutY="14.0" onMouseClicked="#ViewAppointmentDataToBoxes" prefHeight="182.0" prefWidth="873.0">
+                                            <columns>
+                                                <TableColumn fx:id="AllViewAppointmentID" prefWidth="98.0" text="Appointment_ID" />
+                                                <TableColumn fx:id="AllViewTitle" prefWidth="68.0" text="Title" />
+                                                <TableColumn fx:id="AllViewDescription" prefWidth="113.0" text="Description" />
+                                                <TableColumn fx:id="AllViewLocation" prefWidth="127.0" text="Location" />
+                                                <TableColumn fx:id="AllViewContact" prefWidth="52.0" text="Contact" />
+                                                <TableColumn fx:id="AllViewType" prefWidth="103.0" text="Type" />
+                                                <TableColumn fx:id="AllViewStartDateTime" prefWidth="118.0" text="Start Date and Time" />
+                                                <TableColumn fx:id="AllViewEndDateTime" prefWidth="111.0" text="End Date and Time" />
+                                                <TableColumn fx:id="AllViewCustomerID" prefWidth="77.0" text="Customer_ID" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <Separator layoutX="713.0" layoutY="298.0" orientation="VERTICAL" prefHeight="253.0" prefWidth="5.0" />
+                <Button fx:id="resetAppointmentButton" disable="true" focusTraversable="false" layoutX="735.0" layoutY="442.0" mnemonicParsing="false" onAction="#resetAllTextBoxes" prefHeight="25.0" prefWidth="149.0" text="Reset Appointment Data" />
+                <Label layoutX="16.0" layoutY="307.0" text="Appointment Data" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="appointmentStartDatePicker" layoutX="488.0" layoutY="394.0" prefHeight="25.0" prefWidth="96.0" promptText="select date" />
+                <ComboBox fx:id="appointmentStartTimeComboBox" layoutX="597.0" layoutY="394.0" prefHeight="25.0" prefWidth="108.0" promptText="select time" />
+                <DatePicker fx:id="appointmentEndDatePicker" layoutX="488.0" layoutY="429.0" prefHeight="25.0" prefWidth="103.0" promptText="select date" />
+                <ComboBox fx:id="appointmentEndTimeComboBox" layoutX="597.0" layoutY="429.0" prefHeight="25.0" prefWidth="108.0" promptText="select time" />
+                <RadioButton layoutX="261.0" layoutY="22.0" mnemonicParsing="false" onAction="#buttonToReportSceneChange" text="Report Form" toggleGroup="$formControlToggleGroup" underline="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

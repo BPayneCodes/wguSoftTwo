@@ -1,0 +1,39 @@
+Date: 2023-02-19 -- Timestamp: 2023-02-19 11:58:27.1148078 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 12:25:10.0838163 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 12:25:41.7528051 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 12:28:24.6048544 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 13:18:04.674799 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 13:25:20.0718424 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 13:32:14.8028015 -- Attempt Successfully Completed
+Date: 2023-02-19 -- Timestamp: 2023-02-19 13:51:05.5578014 -- Attempt Successfully Completed
+Date: 2023-02-20 -- Timestamp: 2023-02-20 16:38:34.254671 -- Attempt Successfully Completed
+Date: 2023-02-20 -- Timestamp: 2023-02-20 16:44:38.6156062 -- Attempt Successfully Completed
+Date: 2023-02-20 -- Timestamp: 2023-02-20 17:21:37.3816707 -- Attempt Successfully Completed
+Date: 2023-02-21 -- Timestamp: 2023-02-21 18:34:52.1234649 -- Attempt Successfully Completed
+Date: 2023-02-21 -- Timestamp: 2023-02-21 18:47:21.0158838 -- Attempt Successfully Completed
+Date: 2023-02-22 -- Timestamp: 2023-02-22 18:26:26.5508384 -- Attempt Successfully Completed
+Date: 2023-02-23 -- Timestamp: 2023-02-23 20:32:48.5209443 -- Attempt Successfully Completed
+Date: 2023-02-24 -- Timestamp: 2023-02-24 18:32:52.5594425 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 20:59:43.747247 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 21:00:58.5310686 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 21:08:11.2132229 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 22:14:40.1412174 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 21:17:21.9872559 -- Attempt Successfully Completed
+Date: 2023-02-26 -- Timestamp: 2023-02-26 22:18:23.1902314 -- Attempt Successfully Completed
+Date: 2023-02-28 -- Timestamp: 2023-02-28 00:24:58.855055 -- Attempt Successfully Completed
+Date: 2023-02-28 -- Timestamp: 2023-02-28 00:26:07.0499536 -- Attempt Successfully Completed
+Date: 2023-02-28 -- Timestamp: 2023-02-28 00:27:11.3943854 -- Attempt Successfully Completed
+Date: 2023-02-28 -- Timestamp: 2023-02-28 00:27:58.0564786 -- Attempt Successfully Completed
+Date: 2023-02-27 -- Timestamp: 2023-02-27 19:28:33.5204847 -- Attempt Successfully Completed
+Date: 2023-02-27 -- Timestamp: 2023-02-27 19:47:55.1424193 -- Attempt Successfully Completed
+Date: 2023-02-27 -- Timestamp: 2023-02-27 20:48:50.9064417 -- Attempt Successfully Completed
+Date: 2023-02-27 -- Timestamp: 2023-02-27 20:50:04.1105056 -- Attempt Successfully Completed
+Date: 2023-02-27 -- Timestamp: 2023-02-27 19:50:32.6654132 -- Attempt Successfully Completed
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:23:16.8044096 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:23:21.1089203 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:23:24.7994052 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:25:42.774191 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:26:06.2286834 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:26:13.8483812 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:26:19.2286485 -- Attempt Failed Please Try Again
+Date: 2024-02-17 -- Timestamp: 2024-02-17 14:28:05.1532868 -- Attempt Successfully Completed
